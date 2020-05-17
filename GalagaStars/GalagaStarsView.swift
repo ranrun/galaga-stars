@@ -50,12 +50,10 @@ class GalagaStarsView : ScreenSaverView {
 
     NSAnimationContext.runAnimationGroup({(context) -> Void in
 
-      if globalCounter % 5 == 0 {
-        addStar(rect:viewBounds)
-      } else if (globalCounter % 15 == 0) {
+      if globalCounter % 10 == 0 {
         addStar(rect:viewBounds)
         addStar(rect:viewBounds)
-      } else if (globalCounter % 30 == 0) {
+      } else if (globalCounter % 20 == 0) {
         addStar(rect:viewBounds)
         addStar(rect:viewBounds)
         addStar(rect:viewBounds)
